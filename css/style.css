@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f222d;
+    weight: 100vw;
+    height: 100vh;
+}
+.title{
+    font-size: 80px;
+    color: #E5E9F0;
+}

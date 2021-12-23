@@ -68,26 +68,31 @@
     </section>
     <main>
       <form action="">
-        <div class="inputGroup">
-          <div><label for="name">Name</label></div>
-          <input id="name" name="name" type="text" required>
+        <div class="group">
+          <input type="text" name="name" autocomplete="off" id="name" required />
+          <label for="name" class="label-name"><span class="content-name">Name</span></label>
+          
         </div>
-        <div class="inputGroup">
-          <div><label for="email">Email</label></div>
-          <input id="email" name="email" type="email" required>
+        <span id="nameStatus"></span>
+        <div class="group">
+          <input type="email" name="email" autocomplete="off" id="email" required/>
+          <label for="email" class="label-name"><span class="content-name">Email</span></label>
+          
         </div>
-        <div class="inputGroup">
-          <div><label for="subject">Subject</label></div>
-          <input id="subject" name="subject" type="text" required>
+        <span id="emailStatus"></span>
+        <div class="group">
+          <input type="text" name="subject" autocomplete="off" id="subject" required/>
+          <label for="subject" class="label-name"><span class="content-name">Subject</span></label>
         </div>
-        <div class="inputGroup">
-          <div><label for="msg">Message</label></div>
-          <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+        <span id="subjectStatus"></span>
+        <div class="groupMessage">
+          <label for="message" class="label-message">Message</label>
+          <textarea name="message" id="message" autocomplete="off" required></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <span id="subjectStatus"></span>
+        <input type="submit" value="Submit" >
       </form>
     </main>
-    <div></div>
     <footer>
       <div class="logoCopy">
         <div class="footerLogo">

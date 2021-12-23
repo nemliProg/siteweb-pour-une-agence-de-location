@@ -1,14 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touch5</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Save on your next car rental with RMN! With a diverse fleet of like-new vehicles, you'll find the perfect rental car at a convenient location near you. Don't dream it, drive it!"
+    />
+    <meta
+      property="og:title"
+      content="RMN rent a car - Great deals on premium car rentals worldwide"
+    />
+    <meta property="og:url" content="https://www.myURL.com/" />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="/img/covers/FORD\ cover.jpg"
+    />
+    <title>RMN - Rent Me Now</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <!-- <img id="hamburger" src="images/hamburger copy.svg" alt="menu toggle" /> -->
+        <div
+          id="menu"
+          class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        >
+          <svg id="hamburger" width="100" height="100" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </div>
+      </div>
+      <div id="logo-holder" data-aos="fade-right" data-aos-duration="2000">
+        <a href="/"
+          ><img
+            id="logo"
+            src="/img/logos/RMN logo png.png"
+            alt="logo Rent Me Now"
+        /></a>
+      </div>
+      <nav id="header-nav" data-aos="fade-left" data-aos-duration="2000">
+        <ul id="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">BOOKING</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="coverHome">
+      <h1 class="coverTitle"><span>R</span>ent it out</h1>
+      <svg id="scroll" class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+    </section>
+    <main>
+      <section id="first" class="firstSection section">
+        <h2 class="sectionTitle">Rent what you want</h2>
+        <div class="carTypes">
+          <div class="carType luxury"><h3>Luxery Cars</h3></div>
+          <div class="carType ordinary"><h3>Ordinary Cars</h3></div>
+        </div>
+      </section>
+      <section class="secondSection section">
+        <h2 class="sectionTitle">Our vehicles by brand</h2>
+        <div class="brands">
+          <div class="brand">
+            <img src="/img/brands/alpharomeo.png" alt="alpharomeo" />
+          </div>
+          <div class="brand"><img src="/img/brands/audi.png" alt="audi" /></div>
+          <div class="brand"><img src="/img/brands/bmw.png" alt="bmw" /></div>
+          <div class="brand">
+            <img src="/img/brands/chevrolet.png" alt="chevrolet" />
+          </div>
+          <div class="brand">
+            <img src="/img/brands/toyota.png" alt="chevrolet" />
+          </div>
+          <div class="brand">
+            <img src="/img/brands/volswagen.png" alt="chevrolet" />
+          </div>
+          <div class="brand">
+            <img src="/img/brands/volvo.png" alt="chevrolet" />
+          </div>
+        </div>
+      </section>
+      <section class="tirthSection section">
+        <h2 class="sectionTitle">Rent Me Now</h2>
+        <div class="choices">
+          <div class="choice gallery">
+            <p>Go to gallery to see more nice cars to rent</p>
+            <button><a href="#">Go To Gallery</a></button>
+          </div>
+          <div class="choice book">
+            <p>There are many special cars waiting for you</p>
+            <button><a href="#">Book Today</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logoCopy">
+        <div class="footerLogo">
+          <img src="/img/logos/RMN logo png.png" alt="" />
+        </div>
+        <div class="footerSecondDiv">
+          <div class="secondaireNav">
+            <div class="contact">
+              <div>Tel : 05.50.25.XX.XX</div>
+              <div>Email : rentmenow@rmn.com</div>
+            </div>
+          </div>
+          <p class="copy"> &copy; 2021 RentMeNow . All right reserved</p>
+        </div>
+      </div>
+      
+      <div class="social">
+        <a href="https://www.facebook.com/younes1xp/"><i style="color: black;" class="fa fa-facebook"></i></a><a href=""><i></i></a><a href=""><i></i></a><a href=""><i></i></a>
+        <a href="https://twitter.com/YounesNemli"><i style="color: black;" class="fa fa-twitter"></i></a><a href=""><i></i></a><a href=""><i></i></a><a href=""><i></i></a>
+        <a href="https://api.whatsapp.com/send?phone=0650257643"><i style="color: black;" class="fa fa-whatsapp"></i></a><a href=""><i></i></a><a href=""><i></i></a><a href=""><i></i></a>
+        <a href="https://www.instagram.com/ynsnemli/"><i style="color: black;" class="fa fa-instagram"></i></a><a href=""><i></i></a><a href=""><i></i></a><a href=""><i></i></a>
+      </div>
+    </footer>
+    <!-- Animation libriry -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/AOS.js"></script>
+    <!-- jquery -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js" defer="true"></script>
-</head>
-<body>
-    <h1 class="title">Hello World!</h1>
-</body>
+    <!-- my pure javascript -->
+    <script src="/js/javascript.js"></script>
+  </body>
 </html>

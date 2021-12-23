@@ -1,0 +1,232 @@
+.coverHome {
+  padding-top: 150px;
+  padding-left: 15%;
+  display: flex;
+  background-image: url(/img/covers/FORD\ cover.jpg);
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coverHome h1{
+  font-size: 4rem;
+  font-family: "quicksand",sans-serif;
+
+}
+.coverHome h1 span{
+  color: #f7931e;
+}
+section{
+  padding-top: 40px;
+  font-family: "quicksand";
+  
+}
+.sectionTitle{
+  position: relative;
+  width: max-content;
+  margin: auto ;
+}
+.sectionTitle::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  bottom: -10px;
+  left: 0px;
+}
+.sectionTitle::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 40%;
+  bottom: -17px;
+  left: 30%;
+}
+.carTypes{
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.carTypes .carType{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carTypes .carType h3{
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carTypes .carType h3:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.luxury{
+  background-image: url(/img/2Types/luxury.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ordinary{
+  background-image: url(/img/2Types/ordinary.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  gap: 15%;
+}
+.brand{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.brand img{
+ width: 160px;
+}
+.choices{
+  margin-top: 70px;
+  display: grid;
+  grid-template:repeat(2,300px)  / 1fr;
+}
+.choice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.choice p {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  padding: 0px 20px;
+}
+.choice button {
+  width: 60%;
+  height: 20%;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+.choice button a{
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-top: 14px;
+}
+.gallery{
+  background-color: #f7931e;
+}
+.book{
+  background-color: rgba(0, 0, 0, 0.637);
+}
+.gallery button{
+  background-color: rgba(0, 0, 0, 0.637);
+}
+.book button{
+  
+  background-color: #f7931e;
+}
+@media screen and (min-width:700px) {
+  .carTypes{
+    flex-direction: row;
+  }
+  .carTypes .carType{
+    width: 50%;
+  }
+  .choices{
+    grid-template:300px / repeat(2,1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* scroll animation */
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+  cursor: pointer;
+}
+
+.arrows path {
+	stroke: #000000;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+#scrollTest{
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  background-color: white;
+}
